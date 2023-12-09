@@ -122,7 +122,7 @@ footer {
   left: 25px;
   word-wrap: break-word;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .bakery-grid {
@@ -140,6 +140,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  #slogan-text {
+    font-size: 60px;
+  }
   .bakery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
