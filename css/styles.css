@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+/* CSS setup  */
+body,
+html,
+*::after,
+*::before {
+  font-family: Krona One;
+  font-weight: lighter;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #f2e1a0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+/* Header */
+
+header {
+  background-color: #422a1c;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+a {
+  margin-bottom: auto;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+#logo {
+  color: #f2e1a0;
+  font-size: 35px;
+}
+
+#hamburger-menu {
+  position: absolute;
+  right: 1.25rem;
+  height: 70%;
+}
+
+#hamburger-menu:hover,
+#hamburger-menu:focus {
+  cursor: pointer;
+  border: 1px inset black;
+}
+
+/* Footer */
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #422a1c;
+  color: #f2e1a0;
+  font-size: 20px;
+  padding: 2rem;
+  padding-bottom: 0;
+  box-shadow: 0 50vh 0 50vh #422a1c;
+}
+
+.subscribe-follow-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-buttons img {
+  width: 35px;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Home content */
+
+.hero {
+  background-color: #422a1c;
+  position: relative;
+  width: 100%;
+  height: 938px;
+}
+
+#hero-image {
+  opacity: 0.7;
+  width: 100%;
+  height: 938px;
+  object-fit: cover;
+}
+
+#slogan-text {
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  word-wrap: break-word;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.bakery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.bakery-grid > img {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+}
+
+@media screen and (min-width: 768px) {
+  .bakery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bakery-grid > img:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Navigation Menu content */
+
+.card-grid-container {
+  display: grid;
+  background-color: #422a1c;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.card-item {
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.card-item img {
+  width: 100%;
+  opacity: 0.8;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-card-text {
+  font-size: 30pt;
+  position: absolute;
+  color: #ffffff;
+  bottom: 10px;
+  left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card-item img {
+    max-height: 590px;
+  }
+  .card-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Donut and Cookie Menu content */
+
+#flavor-grid-container {
+  display: grid;
+  background-color: #f2e1a0;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  list-style-type: none;
+}
+
+#flavor-menu-top-image {
+  background-color: #422a1c;
+}
+
+#flavors-container {
+  display: flex;
+  flex: 50%;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-title {
+  color: #422a1c;
+  text-align: center;
+  font-size: 35px;
+}
+
+#flavors-container li {
+  margin-bottom: 30px;
+  color: #422a1c;
+}
+
+@media screen and (min-width: 768px) {
+  #flavor-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+/* Hours page content */
+
+#hours-location-image-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#hours-address-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#hours-location-title {
+  text-align: left;
+  font-size: 47px;
+  margin-top: 15px;
+}
+
+#address-text {
+  color: #422a1c;
+  font-size: 25px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+#bakery-exterior-image {
+  object-fit: cover;
+  width: 40%;
+  height: 300px;
+}
+
+#seperator-bar-container {
+  display: flex;
+  justify-content: center;
+}
+
+#seperator-bar {
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  height: 8px;
+  background-color: #422a1c;
+}
+
+#daily-hours-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #422a1c;
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+#ch-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#ch-map {
+  overflow: hidden;
+  height: 550px;
+  width: 93%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  #bakery-exterior-image {
+    width: 60%;
+  }
+}
