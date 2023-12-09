@@ -242,13 +242,14 @@ footer {
 
 #hours-location-title {
   text-align: left;
-  font-size: 47px;
+  font-size: 35px;
   margin-top: 15px;
+  margin-right: 10px;
 }
 
 #address-text {
   color: #422a1c;
-  font-size: 25px;
+  font-size: 23px;
   text-align: left;
   line-height: 1.4;
 }
